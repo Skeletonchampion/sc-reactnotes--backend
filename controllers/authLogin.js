@@ -24,7 +24,7 @@ export default async function authLogin(req, res) {
             const accessToken = generateAccessToken(myUser);
             const refreshToken = generateRefreshToken(myUser);
 
-            res.cookie("refreshToken", refreshToken, { httpOnly: true });
+            res.cookie("refreshToken", refreshToken, { httpOnly: true, sameSite: "none" });
 
             res.json({accessToken});
         });
