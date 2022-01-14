@@ -17,7 +17,7 @@ app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     credentials: true,
-    origin: "https://sc-reactnotes.netlify.app"
+    origin: ["https://sc-reactnotes.netlify.app", "http://localhost:3000"]
 }));
 app.use(cookieParser());
 
