@@ -17,6 +17,10 @@ const NoteSchema = new mongoose.Schema({
         type: Date,
         default: new Date()
     },
+    dateCreated: {
+        type: Date,
+        default: new Date()
+    },
     color: {
         type: String,
         default: "transparent"
