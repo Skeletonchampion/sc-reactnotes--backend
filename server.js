@@ -18,7 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     credentials: true,
     origin: ["https://sc-reactnotes.netlify.app", "http://localhost:3000", "http://localhost:3002"],
-    exposedHeaders: ["set-cookie"]
+    exposedHeaders: ["set-cookie"],
+    allowedHeaders: ["Origin", "X-Requested-With, content-type, set-cookie"]
 }));
 app.use(cookieParser());
 
