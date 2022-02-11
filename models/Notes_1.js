@@ -13,9 +13,9 @@ const NoteSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
-    label: {
-        type: String,
-        default: ""
+    labels: {
+        type: Array,
+        default: []
     },
     date: {
         type: Date,

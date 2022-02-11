@@ -4,7 +4,7 @@ export default async function userNewNote(req, res) {
     try {
         if(req.body.type === "notes_1") {
             const { id, title, note, label, dateObject, tasks, color, owner } = req.body;
-            await Notes_1.create({ id, title, label, note, date: dateObject, tasks, color, owner });
+            await Notes_1.create({ id, title, labels, note, date: dateObject, tasks, color, owner });
         }
 
         return res.sendStatus(201);
