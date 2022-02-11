@@ -13,6 +13,10 @@ const NoteSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
+    label: {
+        type: String,
+        default: ""
+    },
     date: {
         type: Date,
         default: new Date()
