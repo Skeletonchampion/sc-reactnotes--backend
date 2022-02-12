@@ -37,6 +37,10 @@ const NoteSchema = new mongoose.Schema({
         type: Array,
         default: []
     },
+    showTasks: {
+        type: Boolean,
+        default: true
+    },
     owner: {
         type: String,
         required: true,
